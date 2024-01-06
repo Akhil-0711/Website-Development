@@ -44,7 +44,15 @@
       <h2>About our services</h2>
       <p>At Furryfriends, we believe that every dog deserves a loving home, and we're dedicated to connecting wonderful dogs with caring individuals and families. When you choose to adopt a dog, you're not just gaining a furry companion; you're providing a second chance at happiness for a loyal friend in need.</p>
       <h2>Available Breads</h2>
-      <p>Will show the avilable breads here</p>
+      <div>
+        {% for bread in breads %}
+          <div>
+           <h4>{{bread['name']}}</h4>
+            <div><b>Description:</b> {{bread['description']}}</div> 
+            <div><b>Location:</b>  {{bread['location']}}</div>
+          </div>
+        {% endfor %}
+      </div>
           <div style="text-align:center;">
            <button>ContactUs</button>
           </div>
