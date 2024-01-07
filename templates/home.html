@@ -46,11 +46,7 @@
       <h2>Available Breads</h2>
       <div>
         {% for bread in breads %}
-          <div>
-           <h4>{{bread['name']}}</h4>
-            <div><b>Description:</b> {{bread['description']}}</div> 
-            <div><b>Location:</b>  {{bread['location']}}</div>
-          </div>
+          {% include 'dogbreads.html' %}
         {% endfor %}
       </div>
           <div style="text-align:center;">
