@@ -7,19 +7,22 @@ BREADS = [
     'id': 1,
     'name': 'Beagle',
     'description':'3yrs old, playful,friendly',
-    'location': 'New Delhi'
+    'location': 'New Delhi',
+    'image_path': 'static/beagle_id1.jpg'
   },
   {
     'id': 2,
-    'name': 'Splitz',
+    'name': 'Spitz',
     'description':'2yrs old, cute,friendly',
-    'location': 'New Delhi'
+    'location': 'New Delhi',
+    'image_path': 'static/spitz_id2.jpg'
   },
   {
     'id': 3,
-    'name': 'Labra',
+    'name': 'Labrador',
     'description':'3yrs old, playful,friendly',
-    'location': 'New Delhi'
+    'location': 'New Delhi',
+    'image_path': 'static/labrador_id3.jpg'
   }
 ]
 

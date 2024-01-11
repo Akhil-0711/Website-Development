@@ -1,18 +1,16 @@
-<div style="border-bottom:4px solid black; margin-bottom:16px">
- <h4 style="color:rgb(120,120,120); margin-bottom:4px">
-   {{bread['name']}}</h4>
-  <div><b>Description:</b> {{bread['description']}}</div> 
-  <div><b>Location:</b>  {{bread['location']}}</div>
-  <button style="background-color: #4CAF50; /* Green */
-                  border: none;
-                  color: white;
-                  padding: 8px 16px;
-                  text-align: center;
-                  text-decoration: none;
-                  display: inline-block;
-                  font-size: 14px;
-                  margin: 4px 2px;
-                  cursor: pointer;">
-    Show Interest
-  </button>
+<div class="padding-bottom:8px; row "style="border-bottom:2px solid black; margin-bottom:16px">
+  <div class="col-6">
+   <h4 style="color:rgb(120,120,120); margin-bottom:4px">
+     {{bread['name']}}</h4>
+    <div><b>Description:</b> {{bread['description']}}</div> 
+    <div><b>Location:</b>  {{bread['location']}}</div>
+  </div>
+  <div class="col-3">
+    <img src="{{ bread['image_path'] }}" style="height:150px; border-radius:5px;margin-bottom:16px" alt="{{ bread['name'] }}" class="img-fluid rounded-start">
+  </div>
+  <div class="col-3">
+    <a href="mailto:support@furryfriends.com?subject=Inquiry about {{bread['name']}}" type="button" class="btn btn-outline-primary">
+      Show Interest
+    </a>
+  </div>
 </div>
